@@ -1,191 +1,166 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>VapesTob - Tu Sabor, Tu Estilo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VapesTob</title>
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: #0f0f0f;
-      color: #fff;
+      font-family: sans-serif;
+      background: url('https://i.postimg.cc/kGMGfnjF/1.jpg') no-repeat center center fixed;
+      background-size: cover;
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
     }
-
-    header {
-      background: #121212;
+    h1, h2 {
+      color: white;
       text-align: center;
-      padding-bottom: 20px;
     }
-
-    .logo-banner {
-      width: 100%;
-      max-height: 450px;
-      object-fit: cover;
-    }
-
-    h1 {
-      color: #00ffcc;
-      font-size: 2.5em;
-      margin-top: 0.5em;
-    }
-
-    nav {
-      margin-top: 10px;
-    }
-
-    nav a {
-      margin: 0 15px;
-      color: #ccc;
-      text-decoration: none;
-    }
-
-    nav a:hover {
-      color: #00ffcc;
-    }
-
-    .section {
-      padding: 50px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-
-    .section h2 {
-      color: #00ffcc;
-      font-size: 2em;
-      margin-bottom: 20px;
-    }
-
-    .products {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    .product-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
       gap: 20px;
-    }
-
-    .product-card {
-      background: #1e1e1e;
       padding: 20px;
-      border-radius: 10px;
-      text-align: center;
     }
-
-    .product-card img {
+    .product {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+      padding: 10px;
+      width: 160px;
+      text-align: center;
+      color: white;
+    }
+    .product img {
       width: 100%;
-      height: 150px;
-      object-fit: cover;
+      height: auto;
       border-radius: 10px;
-      margin-bottom: 10px;
+      background: transparent;
     }
-
-    .buy-button {
-      display: inline-block;
-      margin-top: 10px;
-      padding: 10px 15px;
-      background-color: #00ffcc;
-      color: #000;
-      border: none;
-      border-radius: 5px;
-      text-decoration: none;
+    .price {
       font-weight: bold;
+      margin-top: 8px;
     }
-
-    .contact {
-      text-align: center;
+    .whatsapp-btn {
+      margin-top: 10px;
+      background-color: #25D366;
+      color: white;
+      padding: 8px;
+      border-radius: 10px;
+      text-decoration: none;
+      display: inline-block;
     }
-
-    footer {
-      background: #121212;
-      text-align: center;
-      padding: 20px;
-      color: #888;
-    }
-
-    /* Botón de WhatsApp flotante */
-    .whatsapp-float {
+    .floating-wsp {
       position: fixed;
-      bottom: 20px;
-      right: 20px;
-      z-index: 1000;
-    }
-
-    .whatsapp-float img {
-      width: 60px;
-      height: 60px;
+      bottom: 15px;
+      right: 15px;
+      background: #25D366;
+      color: white;
+      padding: 15px;
+      border-radius: 50%;
+      font-size: 20px;
+      z-index: 100;
+      text-align: center;
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
-  <header>
-    <img class="logo-banner" src="vapestob-banner.jpg" alt="VapesTob Banner" />
-    <h1>VapesTob</h1>
-    <nav>
-      <a href="#nosotros">Nosotros</a>
-      <a href="#productos">Productos</a>
-      <a href="#envios">Envíos y Pagos</a>
-      <a href="#contacto">Contacto</a>
-    </nav>
-  </header>
+  <h1>VapesTob</h1>
 
-  <section id="nosotros" class="section">
-    <h2>Sobre Nosotros</h2>
-    <p>
-      En <strong>VapesTob</strong>, te ofrecemos experiencias inolvidables con sabores únicos y dispositivos de alta calidad.
-    </p>
-  </section>
+  <h2>Mini 2200 - S/35</h2>
+  <div class="product-section">
 
-  <section id="productos" class="section">
-    <h2>Nuestros Vapes</h2>
-    <div class="products">
-      <div class="product-card">
-        <img src="https://via.placeholder.com/200x150?text=Grape+Ice" alt="Grape Ice" />
-        <h3>Grape Ice</h3>
-        <p>Uva con un toque de frescura.</p>
-        <a class="buy-button" href="https://wa.me/51906034407?text=Hola,%20quiero%20comprar%20el%20Grape%20Ice" target="_blank">Comprar ahora</a>
-      </div>
-      <div class="product-card">
-        <img src="https://via.placeholder.com/200x150?text=Peach+Mango" alt="Peach Mango" />
-        <h3>Peach Mango</h3>
-        <p>Combinación tropical irresistible.</p>
-        <a class="buy-button" href="https://wa.me/51906034407?text=Hola,%20quiero%20comprar%20el%20Peach%20Mango" target="_blank">Comprar ahora</a>
-      </div>
-      <div class="product-card">
-        <img src="https://via.placeholder.com/200x150?text=Strawberry+Lemon" alt="Strawberry Lemon" />
-        <h3>Strawberry Lemon</h3>
-        <p>Ácido y dulce, balance perfecto.</p>
-        <a class="buy-button" href="https://wa.me/51906034407?text=Hola,%20quiero%20comprar%20el%20Strawberry%20Lemon" target="_blank">Comprar ahora</a>
-      </div>
+    <div class="product">
+      <img src="https://i.postimg.cc/y8RRJ82k/BANANA-ICE.png" alt="BANANA ICE" />
+      <div class="price">S/35 - BANANA ICE</div>
+      <a class="whatsapp-btn" href="https://wa.me/51906034407?text=Quiero%20comprar%20el%20Mini%202200%20-%20Sabor%20BANANA ICE" target="_blank">Comprar</a>
     </div>
-  </section>
+    
+    <div class="product">
+      <img src="https://i.postimg.cc/1tvVxnVY/BLUE-RAZZ-ICE.png" alt="BLUE RAZZ ICE" />
+      <div class="price">S/35 - BLUE RAZZ ICE</div>
+      <a class="whatsapp-btn" href="https://wa.me/51906034407?text=Quiero%20comprar%20el%20Mini%202200%20-%20Sabor%20BLUE RAZZ ICE" target="_blank">Comprar</a>
+    </div>
+    
+    <div class="product">
+      <img src="https://i.postimg.cc/02MM3Nkc/Cereals.png" alt="CEREALS" />
+      <div class="price">S/35 - CEREALS</div>
+      <a class="whatsapp-btn" href="https://wa.me/51906034407?text=Quiero%20comprar%20el%20Mini%202200%20-%20Sabor%20CEREALS" target="_blank">Comprar</a>
+    </div>
+    
+    <div class="product">
+      <img src="https://i.postimg.cc/tgHxFHHD/clear-ice.png" alt="CLEAR ICE" />
+      <div class="price">S/35 - CLEAR ICE</div>
+      <a class="whatsapp-btn" href="https://wa.me/51906034407?text=Quiero%20comprar%20el%20Mini%202200%20-%20Sabor%20CLEAR ICE" target="_blank">Comprar</a>
+    </div>
+    
+    <div class="product">
+      <img src="https://i.postimg.cc/63W41Lqv/Creamy-Mango.png" alt="CREAMY MANGO" />
+      <div class="price">S/35 - CREAMY MANGO</div>
+      <a class="whatsapp-btn" href="https://wa.me/51906034407?text=Quiero%20comprar%20el%20Mini%202200%20-%20Sabor%20CREAMY MANGO" target="_blank">Comprar</a>
+    </div>
+    
+    <div class="product">
+      <img src="https://i.postimg.cc/CxbZh6f8/Fresh-Mint.png" alt="FRESH MINT" />
+      <div class="price">S/35 - FRESH MINT</div>
+      <a class="whatsapp-btn" href="https://wa.me/51906034407?text=Quiero%20comprar%20el%20Mini%202200%20-%20Sabor%20FRESH MINT" target="_blank">Comprar</a>
+    </div>
+    
+    <div class="product">
+      <img src="https://i.postimg.cc/HxvnZqFq/Juicy-Melon.png" alt="JUICY MELON" />
+      <div class="price">S/35 - JUICY MELON</div>
+      <a class="whatsapp-btn" href="https://wa.me/51906034407?text=Quiero%20comprar%20el%20Mini%202200%20-%20Sabor%20JUICY MELON" target="_blank">Comprar</a>
+    </div>
+    
+    <div class="product">
+      <img src="https://i.postimg.cc/QtdVq8Yg/Peach-Ice.png" alt="PEACH ICE" />
+      <div class="price">S/35 - PEACH ICE</div>
+      <a class="whatsapp-btn" href="https://wa.me/51906034407?text=Quiero%20comprar%20el%20Mini%202200%20-%20Sabor%20PEACH ICE" target="_blank">Comprar</a>
+    </div>
+    
+  </div>
+  <h2>Svopp - S/85</h2>
+  <div class="product-section">
 
-  <section id="envios" class="section">
-    <h2>Envíos y Métodos de Pago</h2>
-    <p>
-      🚚 Realizamos envíos a todo el Perú.  
-      📍 Entregas en Lima Metropolitana en menos de 24 horas.  
-      💳 Métodos de pago disponibles:
-    </p>
-    <ul>
-      <li>💵 Efectivo (contra entrega)</li>
-      <li>📱 Yape / Plin</li>
-      <li>🏦 Transferencias bancarias</li>
-    </ul>
-    <p>Escríbenos por WhatsApp para coordinar tu pedido.</p>
-  </section>
-
-  <section id="contacto" class="section contact">
-    <h2>Contacto</h2>
-    <p>¿Tienes preguntas o deseas comprar?</p>
-    <p>Escríbenos a: <a href="mailto:contacto@vapestob.com" style="color:#00ffcc;">contacto@vapestob.com</a></p>
-  </section>
-
-  <footer>
-    &copy; 2025 VapesTob. Todos los derechos reservados.
-  </footer>
-
-  <!-- Botón flotante WhatsApp -->
-  <a href="https://wa.me/51906034407?text=Hola,%20quiero%20más%20información%20sobre%20los%20vapes." class="whatsapp-float" target="_blank" title="WhatsApp">
-    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" />
-  </a>
+    <div class="product">
+      <img src="https://i.postimg.cc/RC3wrdG7/Blueberry-Raspberry-Lemon.png" alt="BLUEBERRY RASPBERRY LEMON" />
+      <div class="price">S/85 - BLUEBERRY RASPBERRY LEMON</div>
+      <a class="whatsapp-btn" href="https://wa.me/51906034407?text=Quiero%20comprar%20el%20Svopp%20-%20Sabor%20BLUEBERRY RASPBERRY LEMON" target="_blank">Comprar</a>
+    </div>
+    
+    <div class="product">
+      <img src="https://i.postimg.cc/zfXRxFVR/Cherry-Cola-Ice.png" alt="CHERRY COLA ICE" />
+      <div class="price">S/85 - CHERRY COLA ICE</div>
+      <a class="whatsapp-btn" href="https://wa.me/51906034407?text=Quiero%20comprar%20el%20Svopp%20-%20Sabor%20CHERRY COLA ICE" target="_blank">Comprar</a>
+    </div>
+    
+    <div class="product">
+      <img src="https://i.postimg.cc/NFTyKNPZ/Cool-Mint.png" alt="COOL MINT" />
+      <div class="price">S/85 - COOL MINT</div>
+      <a class="whatsapp-btn" href="https://wa.me/51906034407?text=Quiero%20comprar%20el%20Svopp%20-%20Sabor%20COOL MINT" target="_blank">Comprar</a>
+    </div>
+    
+    <div class="product">
+      <img src="https://i.postimg.cc/zByHrDwz/Dragonfruit-Lemon.png" alt="DRAGONFRUIT LEMON" />
+      <div class="price">S/85 - DRAGONFRUIT LEMON</div>
+      <a class="whatsapp-btn" href="https://wa.me/51906034407?text=Quiero%20comprar%20el%20Svopp%20-%20Sabor%20DRAGONFRUIT LEMON" target="_blank">Comprar</a>
+    </div>
+    
+    <div class="product">
+      <img src="https://i.postimg.cc/cJ9t2tnk/Grape-Bull.png" alt="GRAPE BULL" />
+      <div class="price">S/85 - GRAPE BULL</div>
+      <a class="whatsapp-btn" href="https://wa.me/51906034407?text=Quiero%20comprar%20el%20Svopp%20-%20Sabor%20GRAPE BULL" target="_blank">Comprar</a>
+    </div>
+    
+    <div class="product">
+      <img src="https://i.postimg.cc/DykJ9TSh/Grape-Ice.png" alt="GRAPE ICE" />
+      <div class="price">S/85 - GRAPE ICE</div>
+      <a class="whatsapp-btn" href="https://wa.me/51906034407?text=Quiero%20comprar%20el%20Svopp%20-%20Sabor%20GRAPE ICE" target="_blank">Comprar</a>
+    </div>
+    
+  </div>
+  <a class="floating-wsp" href="https://wa.me/51906034407" target="_blank">💬</a>
 </body>
 </html>
