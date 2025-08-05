@@ -59,7 +59,7 @@
 
     .products {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 20px;
     }
 
@@ -75,6 +75,19 @@
       height: 150px;
       object-fit: cover;
       border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    .buy-button {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 15px;
+      background-color: #00ffcc;
+      color: #000;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
     }
 
     .contact {
@@ -87,6 +100,19 @@
       padding: 20px;
       color: #888;
     }
+
+    /* Botón de WhatsApp flotante */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 1000;
+    }
+
+    .whatsapp-float img {
+      width: 60px;
+      height: 60px;
+    }
   </style>
 </head>
 <body>
@@ -96,6 +122,7 @@
     <nav>
       <a href="#nosotros">Nosotros</a>
       <a href="#productos">Productos</a>
+      <a href="#envios">Envíos y Pagos</a>
       <a href="#contacto">Contacto</a>
     </nav>
   </header>
@@ -103,7 +130,7 @@
   <section id="nosotros" class="section">
     <h2>Sobre Nosotros</h2>
     <p>
-      En <strong>VapesTob</strong>, nos apasiona brindarte experiencias inolvidables a través de sabores únicos y dispositivos de calidad premium.
+      En <strong>VapesTob</strong>, te ofrecemos experiencias inolvidables con sabores únicos y dispositivos de alta calidad.
     </p>
   </section>
 
@@ -114,18 +141,36 @@
         <img src="https://via.placeholder.com/200x150?text=Grape+Ice" alt="Grape Ice" />
         <h3>Grape Ice</h3>
         <p>Uva con un toque de frescura.</p>
+        <a class="buy-button" href="https://wa.me/51906034407?text=Hola,%20quiero%20comprar%20el%20Grape%20Ice" target="_blank">Comprar ahora</a>
       </div>
       <div class="product-card">
         <img src="https://via.placeholder.com/200x150?text=Peach+Mango" alt="Peach Mango" />
         <h3>Peach Mango</h3>
         <p>Combinación tropical irresistible.</p>
+        <a class="buy-button" href="https://wa.me/51906034407?text=Hola,%20quiero%20comprar%20el%20Peach%20Mango" target="_blank">Comprar ahora</a>
       </div>
       <div class="product-card">
         <img src="https://via.placeholder.com/200x150?text=Strawberry+Lemon" alt="Strawberry Lemon" />
         <h3>Strawberry Lemon</h3>
         <p>Ácido y dulce, balance perfecto.</p>
+        <a class="buy-button" href="https://wa.me/51906034407?text=Hola,%20quiero%20comprar%20el%20Strawberry%20Lemon" target="_blank">Comprar ahora</a>
       </div>
     </div>
+  </section>
+
+  <section id="envios" class="section">
+    <h2>Envíos y Métodos de Pago</h2>
+    <p>
+      🚚 Realizamos envíos a todo el Perú.  
+      📍 Entregas en Lima Metropolitana en menos de 24 horas.  
+      💳 Métodos de pago disponibles:
+    </p>
+    <ul>
+      <li>💵 Efectivo (contra entrega)</li>
+      <li>📱 Yape / Plin</li>
+      <li>🏦 Transferencias bancarias</li>
+    </ul>
+    <p>Escríbenos por WhatsApp para coordinar tu pedido.</p>
   </section>
 
   <section id="contacto" class="section contact">
@@ -135,7 +180,12 @@
   </section>
 
   <footer>
-    &copy; 2025 VapesTob. Todos los derechos reservados. Solo mayores de 21 años.
+    &copy; 2025 VapesTob. Todos los derechos reservados.
   </footer>
+
+  <!-- Botón flotante WhatsApp -->
+  <a href="https://wa.me/51906034407?text=Hola,%20quiero%20más%20información%20sobre%20los%20vapes." class="whatsapp-float" target="_blank" title="WhatsApp">
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" />
+  </a>
 </body>
 </html>
