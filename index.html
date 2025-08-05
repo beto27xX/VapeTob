@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>VapesTob - Tu Sabor, Tu Estilo</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #0f0f0f;
+      color: #fff;
+    }
+
+    header {
+      background: #121212;
+      text-align: center;
+      padding-bottom: 20px;
+    }
+
+    .logo-banner {
+      width: 100%;
+      max-height: 450px;
+      object-fit: cover;
+    }
+
+    h1 {
+      color: #00ffcc;
+      font-size: 2.5em;
+      margin-top: 0.5em;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      margin: 0 15px;
+      color: #ccc;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      color: #00ffcc;
+    }
+
+    .section {
+      padding: 50px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .section h2 {
+      color: #00ffcc;
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .product-card {
+      background: #1e1e1e;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .contact {
+      text-align: center;
+    }
+
+    footer {
+      background: #121212;
+      text-align: center;
+      padding: 20px;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img class="logo-banner" src="vapestob-banner.jpg" alt="VapesTob Banner" />
+    <h1>VapesTob</h1>
+    <nav>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#productos">Productos</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <section id="nosotros" class="section">
+    <h2>Sobre Nosotros</h2>
+    <p>
+      En <strong>VapesTob</strong>, nos apasiona brindarte experiencias inolvidables a través de sabores únicos y dispositivos de calidad premium.
+    </p>
+  </section>
+
+  <section id="productos" class="section">
+    <h2>Nuestros Vapes</h2>
+    <div class="products">
+      <div class="product-card">
+        <img src="https://via.placeholder.com/200x150?text=Grape+Ice" alt="Grape Ice" />
+        <h3>Grape Ice</h3>
+        <p>Uva con un toque de frescura.</p>
+      </div>
+      <div class="product-card">
+        <img src="https://via.placeholder.com/200x150?text=Peach+Mango" alt="Peach Mango" />
+        <h3>Peach Mango</h3>
+        <p>Combinación tropical irresistible.</p>
+      </div>
+      <div class="product-card">
+        <img src="https://via.placeholder.com/200x150?text=Strawberry+Lemon" alt="Strawberry Lemon" />
+        <h3>Strawberry Lemon</h3>
+        <p>Ácido y dulce, balance perfecto.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto" class="section contact">
+    <h2>Contacto</h2>
+    <p>¿Tienes preguntas o deseas comprar?</p>
+    <p>Escríbenos a: <a href="mailto:contacto@vapestob.com" style="color:#00ffcc;">contacto@vapestob.com</a></p>
+  </section>
+
+  <footer>
+    &copy; 2025 VapesTob. Todos los derechos reservados. Solo mayores de 21 años.
+  </footer>
+</body>
+</html>
